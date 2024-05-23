@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free templete</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.green.css">
+    <script src="jquery.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+</head>
+<style>
+    .item {
+        background-color: #ffffff;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        top: 0px;
+        z-index: 2;
+        left: 65px;
+    }
+
+    .maodal-harder {
+        padding: 27px 41px;
+    }
+
+    .head-3 {
+        color: rgb(114, 111, 109);
+        text-align: center;
+    }
+
+    .head-1 {
+        text-align: center;
+    }
+
+    .head-modal {
+        padding: 0px 30px;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 23px;
+        left: 26px;
+        padding: 10px 10PX;
+        background-color: rgb(85, 82, 82);
+        color: white;
+        border: none;
+        font-weight: 900;
+    }
+
+    .pop-upbox {
+        display: none;
+        transition: 0.5s;
+        position: relative;
+    }
+
+    .fa-brands {
+        display: block !important;
+    }
+
+    .icon-slide {
+        color: black;
+        display: flex;
+        background-color: rgb(85, 82, 82);
+    }
+
+    .icon-slide i {
+        margin: 0px 13px;
+        padding: 12px;
+        font-size: 20px;
+        color: white;
+    }
+</style>
+</style>
+
+<body>
+
+
+
+
+</body>
+
+<!-- navbar start  -->
+
+<div class="wraper">
+    <div class="container p-0">
+        <div class="row p-3 m-0 color">
+            <div class="col-md-3 p-0 wt-10  ">
+                <div class="side-nav">
+                    <span class=" fs-3 ">Little <span class="text-dark fs-5"> Fashion</span>
+                        <div class="icon">
+                            <i class="fa-solid fa-bars menuIcon" onclick="clickmenu()"></i>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-0" id="navbar-text">
+                <ul class="navbar" id="navbar">
+                    <li class="nav-item text-white"><a href="index.html">Home</a></li>
+                    <li class="nav-item text-white"><a href="story.html">Story</a></li>
+                    <li class="nav-item text-white"><a href="product.html">Product</a></li>
+                    <li class="nav-item text-white"><a href="faq.html">FAQs</a></li>
+                    <li class="nav-item text-white"><a href="contect.html">Contect</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 p-0 left">
+                <i class="fa-solid dd fa-user"></i>
+                <i class="fa-regular dd fa-calendar"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- navbar end  -->
+
+<div class="container-fliud">
+    <div class="row mt-4 back w-100">
+        <div class="col-md-5 mrg">
+            <div class="secbox">
+                <h1 class="dk3"> <span class="dk">Retail</span> shop owners</h1>
+                <!-- <p class="lead">Credits go to Unsplash and FreePik websites for images used in this Little
+                    Fashion by Tooplate.</p> -->
+                <!-- <div class="btn close border">EXPLORE PRODUCTS</div> -->
+            </div>
+        </div>
+        <div class="col-md-7 p-0 ">
+            <img src="images/img-3.jpg" class="img-fluid" alt="">
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fliud backe">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+                <h2 class="dk-3 ml"> Meet our <span class="dk">Team</span> </h2>
+            </div>
+            <div class="col-lg-4  col-12 py-5">
+                <div class="team-thumb d-flex align-items-center">
+                    <img src="images/10.jpg" class="img-fluid" alt="Loading img">
+                    <div class="team-info">
+                        <h5 class="mb-0">Don</h5>
+                        <strong class="text-muted">Product metued</strong>
+                        <button type="button" class="btn custom-modal-btn" id="openbtn" onclick="openfun()">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- .......... -->
+
+
+
+            <div class="col-lg-4  col-12 py-5">
+                <div class="team-thumb d-flex align-items-center">
+                    <img src="images/10.jpg" class="img-fluid" alt="Loading img">
+                    <div class="team-info">
+                        <h5 class="mb-0">Don</h5>
+                        <strong class="text-muted">Product metued</strong>
+                        <button type="button" class="btn custom-modal-btn" id="openbtn" onclick="openfun()">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-4  col-12 py-5">
+                <div class="team-thumb d-flex align-items-center">
+                    <img src="images/10.jpg" class="img-fluid" alt="Loading img">
+                    <div class="team-info">
+                        <h5 class="mb-0">Don</h5>
+                        <strong class="text-muted">Product metued</strong>
+                        <button type="button" class="btn custom-modal-btn" id="openbtn" onclick="openfun()">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="col-lg-4 col-12">
+                <div class="team-thumb d-flex align-items-center">
+                    <img src="images/10.jpg" class="img-fluid" alt="Loading img">
+                </div>
+            </div>
+        </div> -->
+
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ............. -->
+
+<div class="container">
+
+
+    <div class="pop-upbox" id="pop-up">
+        <div class="modal-content">
+            <div class="maodal-harder">
+                <h1 class="head-1">Marie Sam</h1>
+                <h3 class="head-3">Founder & CEO</h3>
+            </div>
+            <hr>
+            <div class="head-modal">
+                <h2>Over three years in business had the chance to work on variety of projects, with
+                    companies</h2>
+                <p class="pera-modal">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua.
+
+                <p>Incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse commodo
+                    viverra.</p>
+                </p>
+            </div>
+            <button class="close-btn" onclick="closefun()">X</button>
+
+            <div class="icon-slide">
+
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ........................ -->
+<div class="container-fluid">
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <h4 class="dk3 text-dark txt">
+                Customer love,
+                <span class="dk">Little</span> Fashion
+            </h4>
+            <div class="container">
+                <div class="box1">
+                    <p class="lead text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore assumenda
+                        veritatis deleniti, quod vero vel itaque tempore perferendis, quaerat accusantium a debitis
+                        voluptate quibusdam aliquam voluptatibus praesentium dolores? Omnis, quia.</p>
+                    <div class="phto-sec">
+                        <img src="images/19.jpg" class="img-fluid" alt="">
+                        <div class="prra">
+                            <strong>Lorem, ipsum adipisicing.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <h4 class="dk3 text-dark txt">
+                Customer love,
+                <span class="dk">Little</span> Fashion
+            </h4>
+            <div class="container">
+                <div class="box1">
+                    <p class="lead text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore assumenda
+                        veritatis deleniti, quod vero vel itaque tempore perferendis, quaerat accusantium a debitis
+                        voluptate quibusdam aliquam voluptatibus praesentium dolores? Omnis, quia.</p>
+                    <div class="phto-sec">
+                        <img src="images/19.jpg" class="img-fluid" alt="">
+                        <div class="prra">
+                            <strong>Lorem, ipsum adipisicing.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <h4 class="dk3 text-dark txt">
+                Customer love,
+                <span class="dk">Little</span> Fashion
+            </h4>
+            <div class="container">
+                <div class="box1">
+                    <p class="lead text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore assumenda
+                        veritatis deleniti, quod vero vel itaque tempore perferendis, quaerat accusantium a debitis
+                        voluptate quibusdam aliquam voluptatibus praesentium dolores? Omnis, quia.</p>
+                    <div class="phto-sec">
+                        <img src="images/19.jpg" class="img-fluid" alt="">
+                        <div class="prra">
+                            <strong>Lorem, ipsum adipisicing.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-dark">
+    <div class="row p-5">
+        <div class="col-md-3">
+            <h1 class="hd text-white"> <span class="dk">Little</span> Sitemap</h1>
+            <p class="pera">Copyright © 2045 Little Fashion</p>
+            <p class="pera">Designed by Tooplate</p>
+        </div>
+        <div class="col-md-3 ">
+            <h1 class="hd text-white"> <span class="dk">Little</span> Fashion</h1>
+            <p class="pera">storey</p>
+            <p class="pera">Privecy policy</p>
+            <p class="pera">services</p>
+        </div>
+        <div class="col-md-3">
+            <h1 class="hd text-white"> <span class="dk">Little</span>Social</h1>
+            <p class="pera">Products</p>
+            <p class="pera">FAQ</p>
+        </div>
+        <div class="col-md-3">
+            <h1 class="hd text-white"> <span class="dk">Little</span> Fashion</h1>
+            <div class="icon-buttom">
+                <i class="fa-brands fa-facebook text-white p-2  f8"></i>
+                <i class="fa-brands fa-instagram text-white p-2 f8"></i>
+                <i class="fa-brands fa-x-twitter text-white p-2 f8"></i>
+                <i class="fa-brands fa-whatsapp text-white p-2 f8"></i>
+                <i class="fa-brands fa-linkedin-in text-white p-2 f8"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="firsr.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    });
+
+    let x = document.getElementById('navbar-text');
+        let p = document.getElementById('navbar');
+        let menuIcon = document.querySelector('.menuIcon');
+
+        function openMenu() {
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            }
+            else {
+                x.style.display = 'none';
+            }
+        };
+        menuIcon.addEventListener('click', () => openMenu());
+
+    let t= document.getElementById("pop-up");
+    function openfun() {
+        t.style.display = "block"
+    }
+    function closefun() {
+        t.style.display = "none";
+    }
+  
+ </script> 
+
+</body>
+
+</html>

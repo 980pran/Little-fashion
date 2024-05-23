@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .modal-content {
+
+        height: 500px;
+        max-width: 500px;
+        margin: auto;
+        background-color: rgb(245, 238, 238);
+        position: relative;
+    }
+
+    .maodal-harder {
+        padding: 27px 41px;
+    }
+
+    .head-3 {
+        color: rgb(114, 111, 109);
+        text-align: center;
+    }
+
+    .head-1 {
+        text-align: center;
+    }
+
+    .head-modal {
+        padding: 0px 30px;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 23px;
+        right: 26px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        font-weight: 900;
+    }
+
+    .pop-upbox {
+        display: none;
+        transition: 0.5s;
+    }
+</style>
+
+<body>
+    <button class="btn" id="openbtn" onclick="openfun()">clcik btn</button>
+    <div class="pop-upbox" id="pop-up">
+        <div class="modal-content">
+            <div class="maodal-harder">
+                <h1 class="head-1">Don Haruko</h1>
+                <h3 class="head-3">Product, VP</h3>
+            </div>
+            <hr>
+            <div class="head-modal">
+                <h2>Over three years in business had the chance to work on variety of projects, with companies</h2>
+                <p class="pera-modal">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+
+                <p>Incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse commodo viverra.</p>
+                </p>
+            </div>
+            <button class="close-btn" onclick="closefun()">X</button>
+        </div>
+    </div>
+
+
+    <script>
+        let x = document.getElementById("pop-up");
+        function openfun() {
+            x.style.display = "block"
+        }
+        function closefun() {
+            x.style.display = "none";
+        }
+
+
+
+    </script>
+</body>
+
+</html>
